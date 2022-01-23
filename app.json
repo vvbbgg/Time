@@ -1,0 +1,35 @@
+{
+    "name": "بوت التذكير",
+    "description": ".",
+    "repository": "https://github.com/JMTHON-AR/Time",
+    "logo": "",
+    "keywords": [
+        "Telegram bot",
+        "Pyrogram bot"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "الايبب ايدي احصل عليه من هنا my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "الايبي هاش احصل عليه من هنا my.telegram.org/apps",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "اصنع توكن البوت @BotFather",
+            "required": true
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
